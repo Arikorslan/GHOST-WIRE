@@ -1,0 +1,7 @@
+[INFO   ] Logger: Record log in /home/user/.kivy/logs/kivy_26-09-20_2.txt
+[INFO   ] Kivy: v2.3.1
+[INFO   ] Kivy: Installed at "/usr/local/lib/python3.13/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.13.14 (main, Jul 14 2026, 04:45:36) [GCC 14.2.0]
+[INFO   ] Python: Interpreter at "/usr/local/bin/python3"
+[INFO   ] Logger: Purge log fired. Processing...
+[INFO   ] Logger: Purge finished!

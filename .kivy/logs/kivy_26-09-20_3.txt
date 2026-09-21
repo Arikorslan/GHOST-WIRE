@@ -1,0 +1,12 @@
+[INFO   ] Logger: Record log in /home/user/.kivy/logs/kivy_26-09-20_3.txt
+[INFO   ] Kivy: v2.3.1
+[INFO   ] Kivy: Installed at "/usr/local/lib/python3.13/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.13.14 (main, Jul 14 2026, 04:45:36) [GCC 14.2.0]
+[INFO   ] Python: Interpreter at "/usr/local/bin/python3"
+[INFO   ] Logger: Purge log fired. Processing...
+[INFO   ] Logger: Purge finished!
+[INFO   ] KivyMD: 1.2.0, git-Unknown, 2026-09-20 (installed at "/usr/local/lib/python3.13/site-packages/kivymd/__init__.py")
+[WARNING] KivyMD: Version 1.2.0 is deprecated and is no longer supported. Use KivyMD version 2.0.0 from the master branch (pip install https://github.com/kivymd/KivyMD/archive/master.zip)
+[INFO   ] Factory: 195 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[INFO   ] Text: Provider: sdl2

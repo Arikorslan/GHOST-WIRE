@@ -1,0 +1,156 @@
+[INFO   ] Logger: Record log in /home/user/.kivy/logs/kivy_26-09-20_24.txt
+[INFO   ] Kivy: v2.3.1
+[INFO   ] Kivy: Installed at "/usr/local/lib/python3.13/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.13.14 (main, Jul 14 2026, 04:45:36) [GCC 14.2.0]
+[INFO   ] Python: Interpreter at "/usr/local/bin/python3"
+[INFO   ] Logger: Purge log fired. Processing...
+[INFO   ] Logger: Purge finished!
+[INFO   ] Factory: 195 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2, img_pil (img_ffpyplayer ignored)
+[ERROR  ] Input: MTDev is not supported by your version of linux
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/kivy/input/providers/__init__.py", line 41, in <module>
+    import kivy.input.providers.mtdev
+  File "/usr/local/lib/python3.13/site-packages/kivy/input/providers/mtdev.py", line 94, in <module>
+    from kivy.lib.mtdev import Device, \
+    ...<5 lines>...
+        MTDEV_ABS_TOUCH_MAJOR, MTDEV_TYPE_EV_SYN
+  File "/usr/local/lib/python3.13/site-packages/kivy/lib/mtdev.py", line 30, in <module>
+    libmtdev = cdll.LoadLibrary('libmtdev.so.1')
+  File "/usr/local/lib/python3.13/ctypes/__init__.py", line 482, in LoadLibrary
+    return self._dlltype(name)
+           ~~~~~~~~~~~~~^^^^^^
+  File "/usr/local/lib/python3.13/ctypes/__init__.py", line 361, in __init__
+    self._handle = self._load_library(name, mode, handle, winmode)
+                   ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/ctypes/__init__.py", line 403, in _load_library
+    return _dlopen(name, mode)
+OSError: libmtdev.so.1: cannot open shared object file: No such file or directory
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'4.5 (Compatibility Profile) Mesa 25.0.7-2+deb13u1'>
+[INFO   ] GL: OpenGL vendor <b'Mesa'>
+[INFO   ] GL: OpenGL renderer <b'llvmpipe (LLVM 19.1.7, 256 bits)'>
+[INFO   ] GL: OpenGL parsed version: 4, 5
+[INFO   ] GL: Shading version <b'4.50'>
+[INFO   ] GL: Texture max size <16384>
+[INFO   ] GL: Texture max units <32>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] Text: Provider: sdl2
+[INFO   ] KivyMD: 1.2.0, git-Unknown, 2026-09-20 (installed at "/usr/local/lib/python3.13/site-packages/kivymd/__init__.py")
+[WARNING] KivyMD: Version 1.2.0 is deprecated and is no longer supported. Use KivyMD version 2.0.0 from the master branch (pip install https://github.com/kivymd/KivyMD/archive/master.zip)
+[INFO   ] Clipboard: Provider: sdl2(['clipboard_xclip', 'clipboard_xsel', 'clipboard_dbusklipper', 'clipboard_gtk3'] ignored)
+[CRITICAL] Cutbuffer: Unable to find any valuable Cutbuffer provider. Please enable debug logging (e.g. add -d if running from the command line, or change the log level in the config) and re-run your app to identify potential causes
+xclip - FileNotFoundError: [Errno 2] No such file or directory: 'xclip'
+  File "/usr/local/lib/python3.13/site-packages/kivy/core/__init__.py", line 59, in core_select_lib
+    mod = importlib.__import__(name='{2}.{0}.{1}'.format(
+        basemodule, modulename, base),
+        globals=globals(),
+        locals=locals(),
+        fromlist=[modulename], level=0)
+  File "<frozen importlib._bootstrap>", line 1474, in __import__
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1023, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/local/lib/python3.13/site-packages/kivy/core/clipboard/clipboard_xclip.py", line 17, in <module>
+    p = subprocess.Popen(['xclip', '-version'], stdout=subprocess.PIPE,
+        stderr=subprocess.DEVNULL)
+  File "/usr/local/lib/python3.13/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 1991, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+
+xsel - FileNotFoundError: [Errno 2] No such file or directory: 'xsel'
+  File "/usr/local/lib/python3.13/site-packages/kivy/core/__init__.py", line 59, in core_select_lib
+    mod = importlib.__import__(name='{2}.{0}.{1}'.format(
+        basemodule, modulename, base),
+        globals=globals(),
+        locals=locals(),
+        fromlist=[modulename], level=0)
+  File "<frozen importlib._bootstrap>", line 1474, in __import__
+  File "<frozen importlib._bootstrap>", line 1395, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1023, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/usr/local/lib/python3.13/site-packages/kivy/core/clipboard/clipboard_xsel.py", line 15, in <module>
+    p = subprocess.Popen(['xsel', '--version'], stdout=subprocess.PIPE)
+  File "/usr/local/lib/python3.13/subprocess.py", line 1039, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/subprocess.py", line 1991, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+
+[INFO   ] GL: NPOT texture support is available
+[INFO   ] Base: Start application main loop
+[WARNING] Deprecated property "<NumericProperty name=width_mult>" of object "<kivymd.uix.toolbar.toolbar.OverFlowMenu object at 0x7f9797eeb000>" has been set, it will be removed in a future version
+[DEBUG  ] Importing BlpImagePlugin
+[DEBUG  ] Importing BmpImagePlugin
+[DEBUG  ] Importing BufrStubImagePlugin
+[DEBUG  ] Importing CurImagePlugin
+[DEBUG  ] Importing DcxImagePlugin
+[DEBUG  ] Importing DdsImagePlugin
+[DEBUG  ] Importing EpsImagePlugin
+[DEBUG  ] Importing FitsImagePlugin
+[DEBUG  ] Importing FliImagePlugin
+[DEBUG  ] Importing FpxImagePlugin
+[DEBUG  ] Image: failed to import FpxImagePlugin: No module named 'olefile'
+[DEBUG  ] Importing FtexImagePlugin
+[DEBUG  ] Importing GbrImagePlugin
+[DEBUG  ] Importing GifImagePlugin
+[DEBUG  ] Importing GribStubImagePlugin
+[DEBUG  ] Importing Hdf5StubImagePlugin
+[DEBUG  ] Importing IcnsImagePlugin
+[DEBUG  ] Importing IcoImagePlugin
+[DEBUG  ] Importing ImImagePlugin
+[DEBUG  ] Importing ImtImagePlugin
+[DEBUG  ] Importing IptcImagePlugin
+[DEBUG  ] Importing JpegImagePlugin
+[DEBUG  ] Importing Jpeg2KImagePlugin
+[DEBUG  ] Importing McIdasImagePlugin
+[DEBUG  ] Importing MicImagePlugin
+[DEBUG  ] Image: failed to import MicImagePlugin: No module named 'olefile'
+[DEBUG  ] Importing MpegImagePlugin
+[DEBUG  ] Importing MpoImagePlugin
+[DEBUG  ] Importing MspImagePlugin
+[DEBUG  ] Importing PalmImagePlugin
+[DEBUG  ] Importing PcdImagePlugin
+[DEBUG  ] Importing PcxImagePlugin
+[DEBUG  ] Importing PdfImagePlugin
+[DEBUG  ] Importing PixarImagePlugin
+[DEBUG  ] Importing PngImagePlugin
+[DEBUG  ] Importing PpmImagePlugin
+[DEBUG  ] Importing PsdImagePlugin
+[DEBUG  ] Importing QoiImagePlugin
+[DEBUG  ] Importing SgiImagePlugin
+[DEBUG  ] Importing SpiderImagePlugin
+[DEBUG  ] Importing SunImagePlugin
+[DEBUG  ] Importing TgaImagePlugin
+[DEBUG  ] Importing TiffImagePlugin
+[DEBUG  ] Importing WebPImagePlugin
+[DEBUG  ] Importing WmfImagePlugin
+[DEBUG  ] Importing XbmImagePlugin
+[DEBUG  ] Importing XpmImagePlugin
+[DEBUG  ] Importing XVThumbImagePlugin
+[INFO   ] Base: Leaving application in progress...
