@@ -1,0 +1,8 @@
+.buildozer/
+bin/
+.git/
+__pycache__/
+shots/
+docs/GHOSTWIRE_Cryptography_Book.pdf
+manual/*.pdf
+manual/figures/
